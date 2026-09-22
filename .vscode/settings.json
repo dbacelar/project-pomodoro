@@ -1,0 +1,41 @@
+{
+  "window.zoomLevel": 1,
+  "breadcrumbs.enabled": false,
+  "editor.fontSize": 17,
+  "debug.console.fontSize": 17,
+  "terminal.integrated.fontSize": 17,
+  "editor.glyphMargin": false,
+  "workbench.activityBar.location": "default",
+  "editor.lineNumbers": "on",
+  "files.eol": "\n",
+  "workbench.editor.labelFormat": "short",
+  "editor.tabSize": 2,
+
+  // Formatação e Lint
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+
+  "editor.codeActionsOnSave": {
+    "source.fixAll.prettier": "explicit"
+  },
+
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "[xml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "[svg]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
