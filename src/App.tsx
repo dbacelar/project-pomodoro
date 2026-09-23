@@ -1,10 +1,15 @@
+import { PlayCircleIcon, StopCircleIcon } from 'lucide-react';
 import { Container } from './components/Container';
 import { CountDown } from './components/CountDown';
+import { Cycles } from './components/Cycles';
+import { DefaultButton } from './components/DefaultButton';
+import { DefaultInput } from './components/DefaultInput';
 import { Heading } from './components/Heading';
 import { Logo } from './components/Logo';
 import { Menu } from './components/Menu';
 import './styles/global.css';
 import './styles/theme.css';
+import { Footer } from './components/Footer';
 
 function App() {
   return (
@@ -21,29 +26,30 @@ function App() {
 
       <Container>
         <form className='form' action=''>
-          <div>
-            <label htmlFor='input'>Task</label>
-            <input id='input' type='text' />
+          <div className='formRow'>
+            <DefaultInput
+              labelText='Task'
+              id='task-input'
+              type='text'
+              placeholder='Digite uma tarefa...'
+            />
           </div>
 
-          <div>
-            <p>Lorem ipsum dolor sit amet.</p>
+          <div className='formRow'>
+            <p>Vamos focar em uma tarefa?</p>
           </div>
-          <div>
-            <p>Ciclos</p>
+          <div className='formRow'>
+            <Cycles />
           </div>
 
-          <div>
-            <p>0 0 0 0 0 0 0 0</p>
-          </div>
-          <div>
-            <button type='submit'>Enviar</button>
+          <div className='formRow'>
+            <DefaultButton icon={<PlayCircleIcon />} color='yellow' />
           </div>
         </form>
       </Container>
 
       <Container>
-        <Heading>FOOTER</Heading>
+        <Footer />
       </Container>
     </>
   );
